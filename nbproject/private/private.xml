@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/doant/OneDrive/Desktop/PRJ301/UserManagement/src/java/Controllers/DeleteController.java</file>
+            <file>file:/C:/Users/doant/OneDrive/Desktop/PRJ301/UserManagement/web/login.jsp</file>
+            <file>file:/C:/Users/doant/OneDrive/Desktop/PRJ301/UserManagement/src/java/Controllers/InsertController.java</file>
+            <file>file:/C:/Users/doant/OneDrive/Desktop/PRJ301/UserManagement/src/java/Config/DBUtils.java</file>
+            <file>file:/C:/Users/doant/OneDrive/Desktop/PRJ301/UserManagement/src/java/Controllers/LoginController.java</file>
+            <file>file:/C:/Users/doant/OneDrive/Desktop/PRJ301/UserManagement/src/java/Controllers/UpdateController.java</file>
+            <file>file:/C:/Users/doant/OneDrive/Desktop/PRJ301/UserManagement/src/java/Controllers/SearchController.java</file>
+            <file>file:/C:/Users/doant/OneDrive/Desktop/PRJ301/UserManagement/src/java/Controllers/MainController.java</file>
+            <file>file:/C:/Users/doant/OneDrive/Desktop/PRJ301/UserManagement/web/WEB-INF/web.xml</file>
+            <file>file:/C:/Users/doant/OneDrive/Desktop/PRJ301/UserManagement/web/index.html</file>
+            <file>file:/C:/Users/doant/OneDrive/Desktop/PRJ301/UserManagement/src/java/DAO/UserDAO.java</file>
+            <file>file:/C:/Users/doant/OneDrive/Desktop/PRJ301/UserManagement/src/java/DAO/DAO.java</file>
+            <file>file:/C:/Users/doant/OneDrive/Desktop/PRJ301/UserManagement/src/java/Controllers/LogoutController.java</file>
+            <file>file:/C:/Users/doant/OneDrive/Desktop/PRJ301/UserManagement/src/java/Models/UserError.java</file>
+            <file>file:/C:/Users/doant/OneDrive/Desktop/PRJ301/UserManagement/src/java/Models/UserDTO.java</file>
+            <file>file:/C:/Users/doant/OneDrive/Desktop/PRJ301/UserManagement/web/admin.jsp</file>
+            <file>file:/C:/Users/doant/OneDrive/Desktop/PRJ301/UserManagement/web/login.html</file>
+            <file>file:/C:/Users/doant/OneDrive/Desktop/PRJ301/UserManagement/web/update.jsp</file>
+        </group>
+    </open-files>
+</project-private>
