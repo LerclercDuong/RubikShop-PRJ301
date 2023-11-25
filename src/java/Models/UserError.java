@@ -10,19 +10,20 @@ package Models;
  * @author doant
  */
 public class UserError {
+
     public String userIDError;
     public String fullNameError;
     public String passwordError;
     public String roleID;
     private String confirmError;
     private String error;
-    
+
     public UserError() {
         this.userIDError = "*";
         this.fullNameError = "*";
         this.passwordError = "*";
         this.roleID = "*";
-        this.confirmError =  "*";
+        this.confirmError = "*";
         this.error = "*";
     }
 
@@ -34,8 +35,7 @@ public class UserError {
         this.confirmError = confirmError;
         this.error = error;
     }
-    
-    
+
     public String getUserIDError() {
         return userIDError;
     }
@@ -80,6 +80,5 @@ public class UserError {
     public String toString() {
         return "UserError{" + "userIDError=" + userIDError + ", fullNameError=" + fullNameError + ", passwordError=" + passwordError + ", roleID=" + roleID + ", confirmError=" + confirmError + ", error=" + error + '}';
     }
-    
-    
+
 }

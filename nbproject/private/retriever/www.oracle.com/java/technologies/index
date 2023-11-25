@@ -1,0 +1,886 @@
+
+<!DOCTYPE html>
+<html lang="en-US" class="no-js"><head>
+<title>Oracle Java Technologies | Oracle</title>
+<meta name="Title" content="Oracle Java Technologies | Oracle">
+<meta name="Description" content="Java can help reduce costs, drive innovation, &amp; improve application services; the #1 programming language for IoT, enterprise architecture, and cloud computing.">
+<meta name="Keywords" content="java technologies, developer tools ">
+<!-- Container/Display Start -->
+<!-- _Raw-Text -->
+<!-- css / js files start -->
+<script>
+!function(){
+var d=document.documentElement;d.className=d.className.replace(/no-js/,'js');
+if(document.location.href.indexOf('betamode=') > -1) document.write('<script src="https://www.oracle.com/asset/web/js/ocom-betamode.js"><\/script>');
+}();
+</script>
+<link data-wscss href="https://www.oracle.com/asset/web/css/ocom-v1-base.css" rel="stylesheet">
+<link data-wscss href="https://www.oracle.com/asset/web/css/ocom-v1-styles.css" rel="preload" as="style" onload="this.rel='stylesheet'" onerror="this.rel='stylesheet'">
+<noscript>
+<link href="https://www.oracle.com/asset/web/css/ocom-v1-styles.css" rel="stylesheet">
+</noscript>
+<link data-wsjs data-reqjq href="https://www.oracle.com/asset/web/js/ocom-v1-base.js" rel="preload" as="script">
+<link data-wsjs data-reqjq href="https://www.oracle.com/asset/web/js/ocom-v1-lib.js" rel="preload" as="script">
+<script data-wsjs src="https://www.oracle.com/asset/web/js/jquery-min.js" async onload="$('head link[data-reqjq][rel=preload]').each(function(){var a = document.createElement('script');a.async=false;a.src=$(this).attr('href');this.parentNode.insertBefore(a, this);});$(function(){$('script[data-reqjq][data-src]').each(function(){this.async=true;this.src=$(this).data('src');});});"></script>
+<!-- end css / js files start -->
+<!-- / _Raw-Text -->
+<!-- Container/Display end -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="siteid" content="us">
+<meta name="countryid" content="US">
+<meta name="robots" content="index, follow">
+<meta name="country" content="United States">
+<meta name="Language" content="en">
+<meta name="Updated Date" content="2023-03-14T22:11:36Z">
+<script type="text/javascript">
+var pageData = pageData || {};
+//page info
+pageData.pageInfo = pageData.pageInfo || {};
+pageData.pageInfo.language = "en";
+pageData.pageInfo.country = "United States";
+pageData.pageInfo.pageTitle = "Oracle Java Technologies | Oracle";
+pageData.pageInfo.description = "Java can help reduce costs, drive innovation, &amp; improve application services; the #1 programming language for IoT, enterprise architecture, and cloud computing.";
+pageData.pageInfo.keywords = "java technologies, developer tools";
+pageData.pageInfo.siteId = "us";
+pageData.pageInfo.countryId = "US";
+pageData.pageInfo.updatedDate = "2023-03-14T22:11:36Z";
+</script>
+<!-- start : ocom/common/global/components/seo-taxonomy-meta-data-->
+<script type="text/javascript">
+var pageData = pageData || {};
+//taxonmy
+pageData.taxonomy = pageData.taxonomy || {};
+pageData.taxonomy.productServices = [];
+pageData.taxonomy.industry = [];
+pageData.taxonomy.region = [];
+pageData.taxonomy.contentType = ["WM178751","WM179506"];
+pageData.taxonomy.buyersJourney = [];
+pageData.taxonomy.revenue = [];
+pageData.taxonomy.title = [];
+pageData.taxonomy.audience = [];
+pageData.taxonomy.persona = [];
+</script>
+<!-- end : ocom/common/global/components/seo-taxonomy-meta-data-->
+<!-- start : ocom/common/global/components/social-media-meta-tags -->
+<!-- end : ocom/common/global/components/social-media-meta-tags -->
+<!-- start : ocom/common/global/components/seo-hreflang-meta-tags --><link rel="canonical" href="https://www.oracle.com/java/technologies/" />
+<link rel="alternate" hreflang="en-AE" href="https://www.oracle.com/ae/java/technologies/" />
+<link rel="alternate" hreflang="ar-AE" href="https://www.oracle.com/ae-ar/java/technologies/" />
+<link rel="alternate" hreflang="es-AR" href="https://www.oracle.com/ar/java/technologies/" />
+<link rel="alternate" hreflang="en-AU" href="https://www.oracle.com/au/java/technologies/" />
+<link rel="alternate" hreflang="en-BE" href="https://www.oracle.com/be/java/technologies/" />
+<link rel="alternate" hreflang="en-BH" href="https://www.oracle.com/bh/java/technologies/" />
+<link rel="alternate" hreflang="ar-BH" href="https://www.oracle.com/bh-ar/java/technologies/" />
+<link rel="alternate" hreflang="pt-BR" href="https://www.oracle.com/br/java/technologies/" />
+<link rel="alternate" hreflang="en-CA" href="https://www.oracle.com/ca-en/java/technologies/" />
+<link rel="alternate" hreflang="fr-CA" href="https://www.oracle.com/ca-fr/java/technologies/" />
+<link rel="alternate" hreflang="de-CH" href="https://www.oracle.com/ch-de/java/technologies/" />
+<link rel="alternate" hreflang="fr-CH" href="https://www.oracle.com/ch-fr/java/technologies/" />
+<link rel="alternate" hreflang="ru" href="https://www.oracle.com/cis/java/technologies/" />
+<link rel="alternate" hreflang="es-CL" href="https://www.oracle.com/cl/java/technologies/" />
+<link rel="alternate" hreflang="zh-CN" href="https://www.oracle.com/cn/java/technologies/" />
+<link rel="alternate" hreflang="es-CO" href="https://www.oracle.com/co/java/technologies/" />
+<link rel="alternate" hreflang="cs-CZ" href="https://www.oracle.com/cz/java/technologies/" />
+<link rel="alternate" hreflang="de-DE" href="https://www.oracle.com/de/java/technologies/" />
+<link rel="alternate" hreflang="en-US" href="https://www.oracle.com/java/technologies/" />
+<link rel="alternate" hreflang="en-EG" href="https://www.oracle.com/eg/java/technologies/" />
+<link rel="alternate" hreflang="ar-EG" href="https://www.oracle.com/eg-ar/java/technologies/" />
+<link rel="alternate" hreflang="es-ES" href="https://www.oracle.com/es/java/technologies/" />
+<link rel="alternate" hreflang="fr-FR" href="https://www.oracle.com/fr/java/technologies/" />
+<link rel="alternate" hreflang="en-HK" href="https://www.oracle.com/hk/java/technologies/" />
+<link rel="alternate" hreflang="en-ID" href="https://www.oracle.com/id/java/technologies/" />
+<link rel="alternate" hreflang="en-IE" href="https://www.oracle.com/ie/java/technologies/" />
+<link rel="alternate" hreflang="en-IL" href="https://www.oracle.com/il-en/java/technologies/" />
+<link rel="alternate" hreflang="en-IN" href="https://www.oracle.com/in/java/technologies/" />
+<link rel="alternate" hreflang="it-IT" href="https://www.oracle.com/it/java/technologies/" />
+<link rel="alternate" hreflang="en-JO" href="https://www.oracle.com/jo/java/technologies/" />
+<link rel="alternate" hreflang="ar-JO" href="https://www.oracle.com/jo-ar/java/technologies/" />
+<link rel="alternate" hreflang="ja-JP" href="https://www.oracle.com/jp/java/technologies/" />
+<link rel="alternate" hreflang="en-KE" href="https://www.oracle.com/ke/java/technologies/" />
+<link rel="alternate" hreflang="ko-KR" href="https://www.oracle.com/kr/java/technologies/" />
+<link rel="alternate" hreflang="en-KW" href="https://www.oracle.com/kw/java/technologies/" />
+<link rel="alternate" hreflang="ar-KW" href="https://www.oracle.com/kw-ar/java/technologies/" />
+<link rel="alternate" hreflang="es-MX" href="https://www.oracle.com/mx/java/technologies/" />
+<link rel="alternate" hreflang="en-MY" href="https://www.oracle.com/my/java/technologies/" />
+<link rel="alternate" hreflang="en-NG" href="https://www.oracle.com/ng/java/technologies/" />
+<link rel="alternate" hreflang="nl-NL" href="https://www.oracle.com/nl/java/technologies/" />
+<link rel="alternate" hreflang="en-NZ" href="https://www.oracle.com/nz/java/technologies/" />
+<link rel="alternate" hreflang="es-PE" href="https://www.oracle.com/pe/java/technologies/" />
+<link rel="alternate" hreflang="en-PH" href="https://www.oracle.com/ph/java/technologies/" />
+<link rel="alternate" hreflang="en-PK" href="https://www.oracle.com/pk/java/technologies/" />
+<link rel="alternate" hreflang="pl-PL" href="https://www.oracle.com/pl/java/technologies/" />
+<link rel="alternate" hreflang="pt-PT" href="https://www.oracle.com/pt/java/technologies/" />
+<link rel="alternate" hreflang="en-QA" href="https://www.oracle.com/qa/java/technologies/" />
+<link rel="alternate" hreflang="ar-QA" href="https://www.oracle.com/qa-ar/java/technologies/" />
+<link rel="alternate" hreflang="ro-RO" href="https://www.oracle.com/ro/java/technologies/" />
+<link rel="alternate" hreflang="en-SA" href="https://www.oracle.com/sa/java/technologies/" />
+<link rel="alternate" hreflang="ar-SA" href="https://www.oracle.com/sa-ar/java/technologies/" />
+<link rel="alternate" hreflang="sv-SE" href="https://www.oracle.com/se/java/technologies/" />
+<link rel="alternate" hreflang="en-SG" href="https://www.oracle.com/sg/java/technologies/" />
+<link rel="alternate" hreflang="sk-SK" href="https://www.oracle.com/sk/java/technologies/" />
+<link rel="alternate" hreflang="tr-TR" href="https://www.oracle.com/tr/java/technologies/" />
+<link rel="alternate" hreflang="zh-TW" href="https://www.oracle.com/tw/java/technologies/" />
+<link rel="alternate" hreflang="en-GB" href="https://www.oracle.com/uk/java/technologies/" />
+<link rel="alternate" hreflang="en-ZA" href="https://www.oracle.com/za/java/technologies/" />
+<meta name="altpages" content="ae,ae-ar,ar,au,be,bh,bh-ar,br,ca-en,ca-fr,ch-de,ch-fr,cis,cl,cn,co,cz,de,eg,eg-ar,es,fr,hk,id,ie,il-en,in,it,jo,jo-ar,jp,ke,kr,kw,kw-ar,mx,my,ng,nl,nz,pe,ph,pk,pl,pt,qa,qa-ar,ro,sa,sa-ar,se,sg,sk,tr,tw,uk,za">
+<script type="text/javascript">
+var pageData = pageData || {};
+//page info
+pageData.pageInfo = pageData.pageInfo || {};
+pageData.pageInfo.altPages = "ae,ae-ar,ar,au,be,bh,bh-ar,br,ca-en,ca-fr,ch-de,ch-fr,cis,cl,cn,co,cz,de,eg,eg-ar,es,fr,hk,id,ie,il-en,in,it,jo,jo-ar,jp,ke,kr,kw,kw-ar,mx,my,ng,nl,nz,pe,ph,pk,pl,pt,qa,qa-ar,ro,sa,sa-ar,se,sg,sk,tr,tw,uk,za";
+</script>
+<!-- end : ocom/common/global/components/seo-hreflang-meta-tags -->
+<!-- Container/Display Start -->
+<!-- _Raw-Text -->
+<!-- www-us HeadAdminContainer -->
+<link rel="icon" href="https://www.oracle.com/asset/web/favicons/favicon-32.png" sizes="32x32">
+<link rel="icon" href="https://www.oracle.com/asset/web/favicons/favicon-128.png" sizes="128x128">
+<link rel="icon" href="https://www.oracle.com/asset/web/favicons/favicon-192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="https://www.oracle.com/asset/web/favicons/favicon-120.png" sizes="120x120">
+<link rel="apple-touch-icon" href="https://www.oracle.com/asset/web/favicons/favicon-152.png" sizes="152x152">
+<link rel="apple-touch-icon" href="https://www.oracle.com/asset/web/favicons/favicon-180.png" sizes="180x180">
+<meta name="msapplication-TileColor" content="#fcfbfa"/>
+<meta name="msapplication-square70x70logo" content="favicon-128.png"/>
+<meta name="msapplication-square150x150logo" content="favicon-270.png"/>
+<meta name="msapplication-TileImage" content="favicon-270.png"/>
+<meta name="msapplication-config" content="none"/>
+<meta name="referrer" content="no-referrer-when-downgrade"/>
+<script async="async" type="text/javascript" src='//consent.truste.com/notice?domain=oracle.com&c=teconsent&js=bb&noticeType=bb&text=true&gtm=1&cdn=1&pcookie' crossorigin></script>
+<style>
+#oReactiveChatContainer1 { display:none;}
+</style>
+<!-- Truste for RU -->
+<script type="text/javascript">
+if (location.pathname.indexOf("/ru/") == 0){
+document.write('\x3Cscript async="async" src=//consent.truste.com/notice?domain=oracleru.com&c=teconsent&js=bb&noticeType=bb&text=true&gtm=1&cdn=1&pcookie crossorigin="">\x3C/script>');
+}
+</script>
+<!--Tealium embed code -->
+<script src="https://tms.oracle.com/main/prod/utag.sync.js"></script>
+<!-- Loading script asynchronously -->
+<script type="text/javascript">
+(function(a,b,c,d){
+if(location.href.indexOf("tealium=dev") == -1) {
+a='https://tms.oracle.com/main/prod/utag.js';
+} else {
+a='https://tms.oracle.com/main/dev/utag.js';
+}
+b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;
+a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
+})();
+</script>
+<!--End-->
+<!-- / _Raw-Text -->
+<!-- Container/Display end -->
+
+<script>(window.BOOMR_mq=window.BOOMR_mq||[]).push(["addVar",{"rua.upush":"false","rua.cpush":"false","rua.upre":"true","rua.cpre":"false","rua.uprl":"false","rua.cprl":"false","rua.cprf":"false","rua.trans":"SJ-7d511b35-f661-4430-b5de-6bae6315ea8b","rua.cook":"false","rua.ims":"false","rua.ufprl":"false","rua.cfprl":"false","rua.isuxp":"false","rua.texp":"norulematch"}]);</script>
+                              <script>!function(e){var n="https://s.go-mpulse.net/boomerang/";if("False"=="True")e.BOOMR_config=e.BOOMR_config||{},e.BOOMR_config.PageParams=e.BOOMR_config.PageParams||{},e.BOOMR_config.PageParams.pci=!0,n="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="DXNLE-YBWWY-AR74T-WMD99-77VRA",function(){function e(){if(!o){var e=document.createElement("script");e.id="boomr-scr-as",e.src=window.BOOMR.url,e.async=!0,i.parentNode.appendChild(e),o=!0}}function t(e){o=!0;var n,t,a,r,d=document,O=window;if(window.BOOMR.snippetMethod=e?"if":"i",t=function(e,n){var t=d.createElement("script");t.id=n||"boomr-if-as",t.src=window.BOOMR.url,BOOMR_lstart=(new Date).getTime(),e=e||d.body,e.appendChild(t)},!window.addEventListener&&window.attachEvent&&navigator.userAgent.match(/MSIE [67]\./))return window.BOOMR.snippetMethod="s",void t(i.parentNode,"boomr-async");a=document.createElement("IFRAME"),a.src="about:blank",a.title="",a.role="presentation",a.loading="eager",r=(a.frameElement||a).style,r.width=0,r.height=0,r.border=0,r.display="none",i.parentNode.appendChild(a);try{O=a.contentWindow,d=O.document.open()}catch(_){n=document.domain,a.src="javascript:var d=document.open();d.domain='"+n+"';void(0);",O=a.contentWindow,d=O.document.open()}if(n)d._boomrl=function(){this.domain=n,t()},d.write("<bo"+"dy onload='document._boomrl();'>");else if(O._boomrl=function(){t()},O.addEventListener)O.addEventListener("load",O._boomrl,!1);else if(O.attachEvent)O.attachEvent("onload",O._boomrl);d.close()}function a(e){window.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!window.BOOMR||!window.BOOMR.version&&!window.BOOMR.snippetExecuted){window.BOOMR=window.BOOMR||{},window.BOOMR.snippetStart=(new Date).getTime(),window.BOOMR.snippetExecuted=!0,window.BOOMR.snippetVersion=12,window.BOOMR.url=n+"DXNLE-YBWWY-AR74T-WMD99-77VRA";var i=document.currentScript||document.getElementsByTagName("script")[0],o=!1,r=document.createElement("link");if(r.relList&&"function"==typeof r.relList.supports&&r.relList.supports("preload")&&"as"in r)window.BOOMR.snippetMethod="p",r.href=window.BOOMR.url,r.rel="preload",r.as="script",r.addEventListener("load",e),r.addEventListener("error",function(){t(!0)}),setTimeout(function(){if(!o)t(!0)},3e3),BOOMR_lstart=(new Date).getTime(),i.parentNode.appendChild(r);else t(!1);if(window.addEventListener)window.addEventListener("load",a,!1);else if(window.attachEvent)window.attachEvent("onload",a)}}(),"".length>0)if(e&&"performance"in e&&e.performance&&"function"==typeof e.performance.setResourceTimingBufferSize)e.performance.setResourceTimingBufferSize();!function(){if(BOOMR=e.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var n="true"=="true"?1:0,t="",a="orxctkyxb5q26zj4ctva-f-04c4cb9d4-clientnsv4-s.akamaihd.net",i="false"=="true"?2:1,o={"ak.v":"36","ak.cp":"82485","ak.ai":parseInt("604074",10),"ak.ol":"0","ak.cr":23,"ak.ipv":4,"ak.proto":"http/1.1","ak.rid":"1febaffc","ak.r":23331,"ak.a2":n,"ak.m":"dscx","ak.n":"essl","ak.bpcip":"116.110.41.0","ak.cport":8884,"ak.gh":"23.50.232.157","ak.quicv":"","ak.tlsv":"tls1.2","ak.0rtt":"","ak.csrc":"-","ak.acc":"reno","ak.t":"1698436330","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==HNvYLQTIbZw+7B4DqpgNnvU2jKAlMFp/H8mfbNFW4Vs/KSoL8tO3dVUUT8t0WnYYgMb9pvQH1g1adrzFCzBkjiYyKZcNAyZY37s+JsT0o3WbIFS8co7pz4KxmoCWcGgh796K05x8Cu1aH+vgSfYVUKfsUlQsSDivJcMDxPwuFnhxyXHA4ipBB84Wpyp8m40G+aTD82J+WeNbsfAihVm4ud8XbYxbZEdbqa3YKTf5Tw3h2IKZSrpBOXG6nHXOY2rdL5edSvbx5VyipL2VEQpoZ0QNWMh5NnSJ6IOLGfWwlCwmbcNCS8yRE6bqXvRXcyEsulxtCyBwEc/M2C0Z8Td6bDy8dLvNEk93I/F0bBYFfS3E1faWkPBDC/9UuEnlK4lzaedH2l4mL3X69d7+kHRK0iqQvq60jC+TIO+rEvxjKpk=","ak.pv":"433","ak.dpoabenc":"","ak.tf":i};if(""!==t)o["ak.ruds"]=t;var r={i:!1,av:function(n){var t="http.initiator";if(n&&(!n[t]||"spa_hard"===n[t]))o["ak.feo"]=void 0!==e.aFeoApplied?1:0,BOOMR.addVar(o)},rv:function(){var e=["ak.bpcip","ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.r","ak.acc","ak.t","ak.tf"];BOOMR.removeVar(e)}};BOOMR.plugins.AK={akVars:o,akDNSPreFetchDomain:a,init:function(){if(!r.i){var e=BOOMR.subscribe;e("before_beacon",r.av,null,null),e("onbeacon",r.rv,null,null),r.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head>
+<body class="f11 f11v6">
+<div class="f11w1">
+<!-- start Common/Header -->
+<!-- Dispatcher:null -->
+<!-- BEGIN: oWidget_C/_Raw-Text/Display -->
+<!-- U30v3 -->
+<style>
+#u30{opacity:1 !important;filter:opacity(100%) !important;position:sticky;top:0}
+.u30v3{background:#3a3632;height:50px;overflow:hidden;border-top:5px solid #3a3632;border-bottom:5px solid #3a3632}
+#u30nav,#u30tools{visibility:hidden}
+.u30v3 #u30logo {width:121px;height: 44px;display: inline-flex;justify-content: flex-start;}
+#u30:not(.u30mobile) .u30-oicn-mobile,#u30.u30mobile .u30-oicn{display:none}
+#u30logo svg{height:auto;align-self:center}
+.u30brand{height:50px;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;max-width:1344px;padding:0 48px;margin:0 auto}
+.u30brandw1{display:flex;flex-direction:row;color:#fff;text-decoration:none;align-items:center}
+@media (max-width:1024px){.u30brand{padding:0 24px}}
+#u30skip2,#u30skip2content{transform:translateY(-100%);position:fixed}
+.rtl #u30{direction:rtl}
+</style>
+<section id="u30" class="u30 u30v3 pause" data-trackas="header">
+<div id="u30skip2" aria-expanded="false" tabindex="-1">
+<ul>
+<li><a id="u30acc" href="https://www.oracle.com/corporate/accessibility/">Click to view our Accessibility Policy</a></li>
+<li><a id="u30skip2c" href="#maincontent">Skip to content</a></li>
+</ul>
+</div>
+<div class="u30w1 cwidth" id="u30w1">
+<div id="u30brand" class="u30brand">
+<div class="u30brandw1">
+<a id="u30btitle" href="https://www.oracle.com/" data-lbl="logo" aria-label="Home">
+<div id="u30logo">
+<svg class="u30-oicn-mobile" xmlns="http://www.w3.org/2000/svg" width="32" height="21" viewBox="0 0 32 21"><path fill="#C74634" d="M9.9,20.1c-5.5,0-9.9-4.4-9.9-9.9c0-5.5,4.4-9.9,9.9-9.9h11.6c5.5,0,9.9,4.4,9.9,9.9c0,5.5-4.4,9.9-9.9,9.9H9.9 M21.2,16.6c3.6,0,6.4-2.9,6.4-6.4c0-3.6-2.9-6.4-6.4-6.4h-11c-3.6,0-6.4,2.9-6.4,6.4s2.9,6.4,6.4,6.4H21.2"/></svg>
+<svg class="u30-oicn" xmlns="http://www.w3.org/2000/svg"  width="231" height="30" viewBox="0 0 231 30" preserveAspectRatio="xMinYMid"><path fill="#C74634" d="M99.61,19.52h15.24l-8.05-13L92,30H85.27l18-28.17a4.29,4.29,0,0,1,7-.05L128.32,30h-6.73l-3.17-5.25H103l-3.36-5.23m69.93,5.23V0.28h-5.72V27.16a2.76,2.76,0,0,0,.85,2,2.89,2.89,0,0,0,2.08.87h26l3.39-5.25H169.54M75,20.38A10,10,0,0,0,75,.28H50V30h5.71V5.54H74.65a4.81,4.81,0,0,1,0,9.62H58.54L75.6,30h8.29L72.43,20.38H75M14.88,30H32.15a14.86,14.86,0,0,0,0-29.71H14.88a14.86,14.86,0,1,0,0,29.71m16.88-5.23H15.26a9.62,9.62,0,0,1,0-19.23h16.5a9.62,9.62,0,1,1,0,19.23M140.25,30h17.63l3.34-5.23H140.64a9.62,9.62,0,1,1,0-19.23h16.75l3.38-5.25H140.25a14.86,14.86,0,1,0,0,29.71m69.87-5.23a9.62,9.62,0,0,1-9.26-7h24.42l3.36-5.24H200.86a9.61,9.61,0,0,1,9.26-7h16.76l3.35-5.25h-20.5a14.86,14.86,0,0,0,0,29.71h17.63l3.35-5.23h-20.6" transform="translate(-0.02 0)" /></svg>
+</div></a>
+</div>
+</div>
+<div id="u30nav" class="u30nav" data-closetxt="Close Menu" data-trackas="menu">
+<nav id="u30navw1" aria-label="Main">
+<button data-navtarget="products" aria-controls="products" aria-expanded="false" class="u30navitem">Products</button>
+<button data-navtarget="industries" aria-controls="industries" aria-expanded="false" class="u30navitem">Industries</button>
+<button data-navtarget="resources" aria-controls="resources" aria-expanded="false" class="u30navitem">Resources</button>
+<button data-navtarget="customers" aria-controls="customers" aria-expanded="false" class="u30navitem">Customers</button>
+<button data-navtarget="partners" aria-controls="partners" aria-expanded="false" class="u30navitem">Partners</button>
+<button data-navtarget="developers" aria-controls="developers" aria-expanded="false" class="u30navitem">Developers</button>
+<button data-navtarget="company" aria-controls="company" aria-expanded="false" class="u30navitem">Company</button>
+</nav>
+</div>
+<div id="u30tools" class="u30tools">
+<div id="u30search">
+<div id="u30searchw1">
+<div id="u30searchw2">
+<form name="u30searchForm" id="u30searchForm" data-contentpaths="/content/Web/Shared/Auto-Suggest Panel Event" method="get" action="/search">
+<input type="hidden" name="Nty" value="1">
+<input type="hidden" name="Dy" value="1">
+<!--<input type="hidden" name="Ntk" value="SI-Global">-->
+<input type="hidden" name="Ntk" value="SI-ALL5">
+<input type="hidden" name="cty" value="us">
+<input type="hidden" name="lang" value="en">
+<input type="hidden" name="NoBstNoRec" value="no">
+<div class="u30s1">
+<button id="u30closesearch" aria-label="Close Search" type="button">
+<span>Close Search</span>
+<svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 13L2 7L8 1" stroke="#161513" stroke-width="2"/></svg>
+</button>
+<span class="u30input">
+<div class="u30inputw1">
+<input id="u30input" name="Ntt" value="" type="text" placeholder="Search" autocomplete="off" aria-autocomplete="both" aria-activedescendant="" aria-label="Search Oracle.com" role="combobox" aria-expanded="false" aria-owns="u30autosuggest" aria-haspopup="listbox">
+</div>
+<div id="u30searchw3">
+<ul role="listbox" id="u30autosuggest">
+</ul>
+<div id="u30results">
+<button id="u30closeresults" aria-label="Close Results" type="button">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+<path d="M7,7 L17,17"></path>
+<path d="M17,7 L7,17"></path>
+</svg>
+<span>Close</span>
+</button>
+<div id="u30resultsw1">
+</div>
+<div id="u30noresults">
+<div class="u30result noresults">
+<div>We’re sorry.  We could not find a match for your search.</div>
+<p>We suggest you try the following to help find what you’re looking for:</p>
+<ul class="u30nr1">
+<li>Check the spelling of your keyword search.</li>
+<li>Use synonyms for the keyword you typed, for example, try "application" instead of "software."</li>
+<li>Start a new search.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<span class="u30submit">
+<input class="u30searchbttn" type="submit" value="Submit Search">
+</span>
+<button id="u30clear" type="reset" aria-label="Clear Search">
+<span>Clear Search</span>
+<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 7L13 13M7 13L13 7M19 10C19 14.9706 14.9706 19 10 19C5.02944 19 1 14.9706 1 10C1 5.02944 5.02944 1 10 1C14.9706 1 19 5.02944 19 10Z" stroke="#161513" stroke-width="2"/></svg>
+</button>
+</span>
+</div>
+</form>
+<div id="u30announce" data-alerttxt="suggestions found to navigate use up and down arrows" class="u30visually-hidden" aria-live="polite"></div>
+</div>
+</div>
+<button class="u30searchBtn" id="u30searchBtn" type="button" aria-label="Open Search Field" aria-expanded="false">
+<span>Search</span>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M15,15l6,6M17,10a7,7,0,1,1-7-7A7,7,0,0,1,17,10Z"/></svg>
+</button>
+</div>
+<div id="u30-profile" class="u30-profile">
+<button id="u30-flyout" data-lbl="sign-in-account" aria-expanded="false">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M17,19.51A3,3,0,0,0,14,17H10a3,3,0,0,0-3,2.51m9.92,0a9,9,0,1,0-9.92,0m9.92,0a9,9,0,0,1-9.92,0M15,10a3,3,0,1,1-3-3A3,3,0,0,1,15,10Z"/></svg>
+<span class="acttxt">View Accounts</span>
+</button>
+<div id="u30-profilew1">
+<button id="u30actbck" aria-label="close account flyout"><span class="u30actbcktxt">Back</span></button>
+<div class="u30-profilew2">
+<span class="u30acttitle">Cloud Account</span>
+<a href="/cloud/sign-in.html" class=" u30darkcta u30cloudbg" data-lbl="sign-in-to-cloud">Sign in to Cloud</a>
+</div>
+<span class="u30acttitle">Oracle Account</span>
+<ul class="u30l-out">
+<li><a href="https://www.oracle.com/webapps/redirect/signon?nexturl=" data-lbl="profile:sign-in-account" class="u30darkcta">Sign-In</a></li>
+<li><a href="https://profile.oracle.com/myprofile/account/create-account.jspx" data-lbl="profile:create-account" class="u30lightcta">Create an Account</a></li>
+</ul>
+<ul class="u30l-in">
+<li><a href="/corporate/contact/help.html" data-lbl="help">Help</a></li>
+<li><a href="javascript:sso_sign_out();" id="u30pfile-sout" data-lbl="signout">Sign Out</a></li>
+</ul>
+</div>
+</div>
+<div class="u30-contact">
+<a href="/corporate/contact/" data-lbl="contact-us" title="Contact Sales"><span>Contact Sales</span></a>
+</div>
+<a href="/global-menu-v2/" id="u30ham" role="button" aria-expanded="false" aria-haspopup="true" aria-controls="u30navw1">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+<title>Menu</title>
+<path d="M16,4 L2,4" class="p1"></path>
+<path d="M2,12 L22,12" class="p2"></path>
+<path d="M2,20 L16,20" class="p3"></path>
+<path d="M0,12 L24,12" class="p4"></path>
+<path d="M0,12 L24,12" class="p5"></path>
+</svg>
+<span>Menu</span>
+</a>
+</div>
+</div>
+<script>
+var u30min = [722,352,0,0];
+var u30brsz = new ResizeObserver(u30 => {
+document.getElementById('u30').classList.remove('u30mobile','u30tablet','u30notitle');
+let u30b = document.getElementById('u30brand').offsetWidth,
+u30t = document.getElementById('u30tools').offsetWidth ;
+u30v = document.getElementById('u30navw1');
+u30w = document.getElementById('u30w1').offsetWidth - 48;
+if((u30b + u30t) > u30min[0]){
+u30min[2] = ((u30b + u30t) > 974) ? u30b + u30t + 96 : u30b + u30t + 48;
+}else{
+u30min[2] = u30min[0];
+}
+u30min[3] = ((u30b + 112) > u30min[1]) ? u30min[3] = u30b + 112 : u30min[3] = u30min[1];
+u30v.classList.add('u30navchk');
+u30min[2] = (u30v.lastElementChild.getBoundingClientRect().right > u30min[2]) ? Math.ceil(u30v.lastElementChild.getBoundingClientRect().right) : u30min[2];
+u30v.classList.remove('u30navchk');
+if(u30w <= u30min[3]){
+document.getElementById('u30').classList.add('u30notitle');
+}
+if(u30w <= u30min[2]){
+document.getElementById('u30').classList.add('u30mobile');
+}
+});
+var u30wrsz = new ResizeObserver(u30 => {
+let u30n = document.getElementById('u30navw1').getBoundingClientRect().height,
+u30h = u30[0].contentRect.height;
+let u30c = document.getElementById('u30').classList,
+u30w = document.getElementById('u30w1').offsetWidth - 48,
+u30m = 'u30mobile',
+u30t = 'u30tablet';
+if(u30c.contains('navexpand') && u30c.contains(u30m) && u30w > u30min[2]){
+if(!document.querySelector('button.u30navitem.active')){
+document.getElementById('u30ham').click();
+}
+u30c.remove(u30m);
+if(document.getElementById('u30').getBoundingClientRect().height > 80){
+u30c.add(u30t);
+}else{
+u30c.remove(u30t);
+}
+}else if(u30w <= u30min[2]){
+if(getComputedStyle(document.getElementById('u30tools')).visibility != "hidden"){
+u30c.add(u30m);
+u30c.remove(u30t);
+}
+}else if(u30n < 30 && u30h > 80){
+u30c.add(u30t);
+u30c.remove(u30m);
+}else if(u30n > 30){
+u30c.add(u30m);
+u30c.remove(u30t);
+}else if(u30n < 30 && u30h <= 80){
+u30c.remove(u30m);
+if(document.getElementById('u30').getBoundingClientRect().height > 80){
+u30c.add(u30t);
+}else{
+u30c.remove(u30t);
+}
+}
+});
+u30brsz.observe(document.getElementById('u30btitle'));
+u30wrsz.observe(document.getElementById('u30'));
+</script>
+</section>
+<!-- /U30v3 -->
+<!-- END: oWidget_C/_Raw-Text/Display -->
+<!-- end Common/Header -->
+<!-- _Raw-Text -->
+<!-- CB83v2 -->
+<section class="cb83 cb83v2 cpad pghero bgdarkslate" data-trackas="cb83" data-ocomid="cb83">
+<div class="cb83w7 cwidth">
+<div class="cb83w5">
+<div class="svgimg obic">
+<img src="//www.oracle.com/us/assets/obic-technology-cloud-3889479.svg" alt="
+Java Is the Language of Possibilities">
+</div>
+</div>
+<div class="cb83w3">
+<h2>Java Is the Language of Possibilities</h2>
+<p>Java is powering the innovation behind our digital world. Harness this potential with Java resources for student coders, hobbyists, developers, and IT leaders.</p>
+<div class="obttns">
+<div class="obttn1">
+<a href="//go.java/">Learn how Java powers innovation</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- /CB83v2 -->
+<!-- / _Raw-Text -->
+<!-- U03v5 -->
+<nav class="u03 u03v5 u03bttns" data-trackas="breadcrumb" data-ocomid="u03">
+<div class="cwidth">
+<div class="u03w1">
+<ul>
+<li><a href="/java/">Java</a></li>
+</ul>
+<h1>Java Technical Details</h1>
+</div>
+</div>
+<script type="text/javascript">
+var pageData = pageData || {};
+//page info
+pageData.pageInfo = pageData.pageInfo || {};
+pageData.pageInfo.breadCrumbs = "Java";
+</script>
+</nav>
+<!-- CT12v0 -->
+<nav class="ct12 ct12v0" data-moretxt="More" data-ocomid="ct12" data-trackas="ct12">
+<div class="ct12w1 cwidth">
+<div class="ct12w2">
+<ul>
+<li>
+<div>
+<a href="/java/">Overview</a>
+</div>
+</li>
+<li class="ct12current">
+<div>
+<a href="/java/technologies/">Technical Details</a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+<!-- /CT12v0 -->
+<!-- _Raw-Text -->
+<!-- CB89v0 -->
+<section class="cb89 cb89v0 cpad bgvlightgrey" data-trackas="cb89" data-ocomid="cb89">
+<div class="cb89w1 cwidth">
+<div class="col-framework col2 col-gutters col-justified">
+<div class="col-w1">
+<div class="col-item">
+<div class="col-item-w1">
+<h5>Newest Downloads</h5>
+<ul class="cta-list">
+<li><a href="/java/technologies/downloads/#java21">Java SE 21.0.1</a></li>
+<li><a href="/java/technologies/downloads/#java17">Java SE 17.0.9 (LTS)</a></li>
+<li><a href="/java/technologies/downloads/#java11">Java SE 11.0.21 (LTS)</a></li>
+<li><a href="/java/technologies/downloads/#java8">Java SE 8u391</a></li>
+<li><a href="/java/technologies/javacard-downloads.html">Java Card 3.1</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- /CB89v0 -->
+<!-- / _Raw-Text -->
+<!-- _Raw-Text -->
+<section class="cb27 cb27v5 bgdarkslate" data-trackas="cb27">
+<div class="cb27w1 cwidth">
+<div class="cb27w2">All Oracle Java Downloads</div>
+<div class="cb27w3">
+<div class="obttns">
+<div class="bttn-lightslate obttn6">
+<a href="https://www.oracle.com/downloads/#category-java">Download now</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- / _Raw-Text -->
+<!-- _Raw-Text -->
+<!-- CB97v0 -->
+<section class="cb97 cb97v0 bgvlightgrey cpad" data-trackas="cb97" data-ocomid="cb97">
+<div class="cb97w1 cwidth">
+<h2>Technologies</h2>
+<p>&nbsp;</p>
+<div class="col-framework col5 col-multi col-top col-gutters col-2upmobile col-noanimation">
+<div class="col-w1">
+<a href="/java/technologies/java-se-glance.html" class="col-item">
+<div class="col-item-w1">
+<div class="icn-java fill-darkslate"><span>Java SE</span></div>
+</div>
+</a>
+<a href="/java/technologies/javase-subscription.html" class="col-item">
+<div class="col-item-w1">
+<div class="icn-javacomm fill-darkslate"><span>Java SE Universal Subscription</span></div>
+</div>
+</a>
+<a href="/java/technologies/java-embedded.html" class="col-item">
+<div class="col-item-w1">
+<div class="icn-tables3 fill-darkslate"><span>Java Embedded</span></div>
+</div>
+</a>
+<a href="/java/technologies/java-ee-glance.html" class="col-item">
+<div class="col-item-w1">
+<div class="icn-business-intelligence-f fill-darkslate"><span>Java EE</span></div>
+</div>
+</a>
+<a href="/java/technologies/javameoverview.html" class="col-item">
+<div class="col-item-w1">
+<div class="icn-developer-male fill-darkslate"><span>Java ME</span></div>
+</div>
+</a>
+<a href="/java/technologies/java-card-tech.html" class="col-item">
+<div class="col-item-w1">
+<div class="icn-expenses fill-darkslate"><span>Java Card</span></div>
+</div>
+</a>
+<a href="/java/technologies/javatv.html" class="col-item">
+<div class="col-item-w1">
+<div class="icn-demo fill-darkslate"><span>Java TV</span></div>
+</div>
+</a>
+<a href="/java/technologies/javadb.html" class="col-item">
+<div class="col-item-w1">
+<div class="icn-database fill-darkslate"><span>Java DB</span></div>
+</div>
+</a>
+<a href="/application-development/technologies/" class="col-item">
+<div class="col-item-w1">
+<div class="icn-support-simplified fill-darkslate"><span>Developer Tools</span></div>
+</div>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- /CB97v0 -->
+<!-- / _Raw-Text -->
+<!-- _Raw-Text -->
+<!-- CB88v0 -->
+<section class="cb88 cb88v0 cpad" data-trackas="cb88" data-ocomid="cb88">
+<div class="cb88w1 cwidth">
+<h3 class="sub">What&#039;s New in Java</h3>
+<div class="col-framework col3 col-gutters">
+<div class="col-w1">
+<a class="col-item" href="https://developer.oracle.com/developer-live/">
+<div class="col-item-w1">
+<img src="/a/tech/img/cb88-devlive-2023.png" alt="">
+</div>
+<div class="col-item-w2">
+<h3 class="sub">Join Oracle for the online developer event series to advance your coding skills</h3>
+</div>
+</a>
+<a class="col-item" href="https://blogs.oracle.com/java/post/the-arrival-of-java-21">
+<div class="col-item-w1">
+<img src="https://www.oracle.com/img/tech/cb88-java-logo-001.jpg" alt="">
+</div>
+<div class="col-item-w2">
+<h3 class="sub">Learn more: Introducing Java SE 21</h3>
+</div>
+</a>
+<a class="col-item" href="https://openjdk.java.net">
+<div class="col-item-w1">
+<img src="https://www.oracle.com/img/tech/open-jdk-rgb.png" alt="">
+</div>
+<div class="col-item-w2">
+<h3 class="sub">Learn more about the OpenJDK Project</h3>
+</div>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- /CB88v0 -->
+<!-- / _Raw-Text -->
+<!-- _Raw-Text -->
+<!-- CW65v0 -->
+<section class="cw65 cw65v0 cpad bgvlightgrey" data-trackas="cw65" data-ocomid="cw65"">
+<div class="cw65w5">
+<div class="eyebrow">Trending</div>
+<h2>The Java Source Blog</h2>
+</div>
+<div class="cw65w0 cwidth">
+<div class="cw65w1 o-crsl col3" data-ocomid="ocrsl">
+<div class="crsl-slider col-gutters col-hover">
+<a href="https://blogs.oracle.com/java/sharing-the-code" class="col-item setdarkslate">
+<div class="cw65w2 col-item-w1 bcbordercolor">
+<!--<div class="cw65tag bcbackgroundcolor">Blog</div>-->
+<h3 class="bctxt">Sharing the Code: 25 Years of Java Engagement</h3>
+</div>
+<div class="col-item-w2">
+<p>With the 25th birthday celebration of Java, learn about the programs that continue to keep the technology vibrant.</p>
+</div>
+</a>
+<a href="https://blogs.oracle.com/java/ways-graalvme-adds-value-to-java-se-subscription" class="col-item setdarkslate">
+<div class="cw65w2 col-item-w1 bcbordercolor">
+<!--<div class="cw65tag bcbackgroundcolor">Blog</div>-->
+<h3 class="bctxt">GraalVM Adds Value to the Java SE Subscription</h3>
+</div>
+<div class="col-item-w2">
+<p>Learn more about the entitlement of GraalVM Enterprise at no additional cost with the purchase of Java SE Subscription.</p>
+</div>
+</a>
+<a href="https://blogs.oracle.com/java/java-recognized-as-the-favorite-programming-language" class="col-item setdarkslate">
+<div class="cw65w2 col-item-w1 bcbordercolor">
+<!--<div class="cw65tag bcbackgroundcolor">Blog</div>-->
+<h3 class="bctxt">Java Voted as the Favorite Programming Language</h3>
+</div>
+<div class="col-item-w2">
+<p>Learn more about the recent DZone Audience Awards where Java was voted as the favorite programming language.</p>
+</div>
+</a>
+</div>
+</div>
+<p>&nbsp;</p>
+<p align="center">
+<a class="cta-lnk"  href="//blogs.oracle.com/java/">Read the blog</a></p>
+</div>
+</section>
+<!-- /CW65v0 -->
+<!-- / _Raw-Text -->
+<!-- _Raw-Text -->
+<section class="cb27 cb27v5 bgdarkslate" data-trackas="cb27">
+<div class="cb27w1 cwidth">
+<div class="cb27w2 cb27icn">
+<div class="svgimg obic">
+<img src="//www.oracle.com/us/assets/obic-technology-cloud-3889479.svg" alt="Join an Oracle Code conference">
+</div>
+</div>
+<div class="cb27w2">Join an Oracle Code conference, a series of one-day developer conferences being held worldwide.</div>
+<div class="cb27w3">
+<div class="obttns">
+<div class="bttn-blue obttn5">
+<a href="https://developer.oracle.com/code/">Find an event</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- / _Raw-Text -->
+<!-- _Raw-Text -->
+<!-- CB89v0 -->
+<section class="cb89 cb89v0 cpad" data-trackas="cb89" data-ocomid="cb89">
+<div class="cb89w1 cwidth">
+<h5>Essential Links</h5>
+<div class="col-framework col3 col-gutters col-multi col-justified">
+<div class="col-w1">
+<div class="col-item">
+<div class="col-item-w1">
+<ul class="cta-list">
+<li><a href="/java/technologies/api.html">Java APIs</a></li>
+<li><a href="//community.oracle.com/community/java/java_desktop">Technical Articles</a></li>
+<li><a href="/topics/technologies/newtojava/programming-center.html">New to Java</a></li>
+<li><a href="//education.oracle.com/java/java/pFamily_48" target="_blank">Java Certification and Training</a></li>
+<li><a href="//bugs.java.com/bugdatabase/" target="_blank">Java Bug Database</a></li>
+</ul>
+</div>
+</div>
+<div class="col-item">
+<div class="col-item-w1">
+<ul class="cta-list">
+<li><a href="http://blogs.oracle.com/java">The Java Source Blog</a></li>
+<li><a href="//twitter.com/java" target="_blank">@Java</a></li>
+<li><a href="https://go.oracle.com/subscribe" target="_blank">Java Developer Newsletter</a></li>
+<li><a href="http://www.youtube.com/java" target="_blank">Demos and videos</a></li>
+</ul>
+</div>
+</div>
+<div class="col-item">
+<div class="col-item-w1">
+<ul class="cta-list">
+<li><a href="//community.oracle.com/community/java">Community Platform</a></li>
+<li><a href="//community.oracle.com/community/java/jug">Java User Groups</a></li>
+<li><a href="//community.oracle.com/community/java/java-champions">Java Champions</a></li>
+<li><a href="//jcp.org/en/home/index" target="_blank">Java Community Process</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- /CB89v0 -->
+<!-- / _Raw-Text -->
+<!-- _Raw-Text -->
+<!-- CB75v0 -->
+<section class="cb75 cb75v0 cpad bgdarkgrey" data-trackas="cb75" data-ocomid="cb75">
+<div class="cb75w1 cwidth">
+<h2>Explore More</h2>
+<div class="cb75w5 col-framework col3 col-centered col-multi col-gutters col-justified">
+<div class="col-w1">
+<a class="col-item" href="https://blogs.oracle.com/javamagazine/" target="_blank">
+<div class="col-item-w1">
+<div class="icn-img icn-circle icn-java bgslate"></div>
+<div class="cb75w4"><span class="cta-lnk">Java Magazine</span></div>
+</div>
+</a>
+<a class="col-item" href="https://inside.java/podcast/" target="_blank">
+<div class="col-item-w1">
+<div class="icn-img icn-circle icn-video bgslate"></div>
+<div class="cb75w4"><span class="cta-lnk">Inside Java Podcast</span></div>
+</div>
+</a>
+<a class="col-item" href="https://www.oracle.com/code-one/">
+<div class="col-item-w1">
+<div class="icn-img icn-circle icn-event bgslate"></div>
+<div class="cb75w4"><span class="cta-lnk">Attend an event</span></div>
+</div>
+</a>
+</div>
+</div>
+</section>
+<!-- /CB75v0 -->
+<!-- / _Raw-Text -->
+<!-- _Raw-Text -->
+<!--<section id="try-oracle-cloud-free-tier" class="cb27 cb27v8 cb27sticky bgdarkgrey"
+data-onscroll="200"
+data-trackas="cb27"
+data-ocomid="cb27v8">
+<div class="cb27w1 cwidth">
+<span class="icn-close fill-lightgrey"></span>
+<div class="cb27w2">Build, test, and deploy applications on Oracle Cloud for free.</strong></div>
+<div class="cb27w3">
+<div class="obttns">
+<div class="bttn-darkgrey obttn5">
+<a href="/cloud/free/" data-adbtrack=":ow:o:p:po:062520OTNGlobalPromo" data-cxdtrack=":ow:o:p:po:062520OTNGlobalPromo" data-lbl="otn-promo:try-oracle-cloud-free-tier">Try Oracle Cloud Free Tier</a>
+</div>
+</div>
+</div>
+</div>
+</section>-->
+<!-- / _Raw-Text -->
+<!-- U10v0 -->
+<!-- Dispatcher:null -->
+<!-- BEGIN: oWidget_C/_Raw-Text/Display -->
+<!-- U10v0 -->
+<div id="u10" class="u10 u10v6" data-trackas="ffooter" data-ocomid="u10">
+<nav class="u10w1" aria-label="Main footer">
+<div class="u10w2">
+<div class="u10w3">
+<div class="u10ttl">Resources for</div>
+<ul>
+<li><a data-lbl="resources-for:career" href="/careers/">Careers</a></li>
+<li><a data-lbl="resources-for:developers" href="https://developer.oracle.com/">Developers</a></li>
+<li><a data-lbl="resources-for:investors"
+href="https://investor.oracle.com/home/default.aspx">Investors</a></li>
+<li><a data-lbl="resources-for:partners" href="/partner/">Partners</a></li>
+<li><a data-lbl="resources-for:researchers" href="/research/">Researchers</a></li>
+<li><a data-lbl="resources-for:students-educators"
+href="https://academy.oracle.com/en/oa-web-overview.html">Students and Educators</a></li>
+</ul>
+</div>
+</div>
+<div class="u10w2">
+<div class="u10w3">
+<div class="u10ttl">Why Oracle</div>
+<ul>
+<li><a data-lbl="why-oracle:analyst-reports" href="/corporate/analyst-reports/">Analyst Reports</a>
+</li>
+<li><a data-lbl="why-oracle:gartner-mq-erp-cloud" href="/erp/what-is-erp/best-erp/">Best cloud-based
+ERP</a></li>
+<li><a data-lbl="why-oracle:cloud-economics" href="/cloud/economics/">Cloud Economics</a></li>
+<li><a data-lbl="why-oracle:corporate-responsibility" href="/social-impact/">Corporate
+Responsibility</a></li>
+<li><a data-lbl="why-oracle:diversity-inclusion"
+href="/corporate/careers/diversity-inclusion/">Diversity and Inclusion</a></li>
+<li><a data-lbl="why-oracle:security-pracitices" href="/corporate/security-practices/">Security
+Practices</a></li>
+</ul>
+</div>
+</div>
+<div class="u10w2">
+<div class="u10w3">
+<div class="u10ttl">Learn</div>
+<ul>
+<li><a data-lbl="learn:cloud-computing" href="/cloud/what-is-cloud-computing/">What is cloud
+computing?</a></li>
+<li><a data-lbl="learn:crm" href="/cx/what-is-crm/">What is CRM?</a></li>
+<li><a data-lbl="learn:docker" href="/cloud/cloud-native/container-registry/what-is-docker/">What is
+Docker?</a></li>
+<li><a data-lbl="learn:kubernetes"
+href="/cloud/cloud-native/container-engine-kubernetes/what-is-kubernetes/">What is
+Kubernetes?</a></li>
+<li><a data-lbl="learn:python" href="https://developer.oracle.com/python/what-is-python/">What is
+Python?</a></li>
+<li><a data-lbl="learn:saas" href="/applications/what-is-saas/">What is SaaS?</a></li>
+</ul>
+</div>
+</div>
+<div class="u10w2">
+<div class="u10w3">
+<div class="u10ttl">News and Events</div>
+<ul>
+<li><a data-lbl="newsandevents:news" href="/news/">News</a></li>
+<li><a data-lbl="newsandevents:oracle-cloudworld" href="/cloudworld/">Oracle CloudWorld</a></li>
+<li><a data-lbl="newsandevents:oracle-cloudworld-tour" href="/cloudworld-tour/">Oracle CloudWorld Tour</a></li>
+<li><a data-lbl="newsandevents:oracle-health-conference" href="/oracle-health-conference/">Oracle Health Conference</a></li>
+<li><a data-lbl="newsandevents:devlive-level-up" href="https://developer.oracle.com/community/events/devlive-level-up-march-2023-recordings.html">DevLive Level Up</a></li>
+<li><a data-lbl="newsandevents:search-all-events" href="https://search.oracle.com/events?q=&amp;lang=english">Search all events</a></li>
+</ul>
+</div>
+</div>
+<div class="u10w2">
+<div class="u10w3">
+<div class="u10ttl">Contact Us</div>
+<ul>
+<li><a href="tel:18006330738">US Sales: +1.800.633.0738</a></li>
+<li><a data-lbl="contact-us:how-can-we-help" href="/corporate/contact/">How can we help?</a></li>
+<li><a data-lbl="contact-us:subscribe-to-emails" href="https://go.oracle.com/subscriptions">Subscribe to emails</a></li>
+<li><a data-lbl="contact-us:integrity-helpline" href="https://secure.ethicspoint.com/domain/media/en/gui/31053/index.html">Integrity Helpline</a></li>
+</ul>
+</div>
+</div>
+<div class="u10w4">
+<hr />
+</div>
+</nav>
+<div class="u10w11">
+<ul class="u10-cr">
+<li class="u10mtool" id="u10cmenu">
+<a data-lbl="country-region" class="u10ticon u10regn"
+href="/universal-menu/#u10countrymenu">Country/Region</a>
+</li>
+</ul>
+<nav class="u10w5 u10w10" aria-label="Site info">
+<ul class="u10-links">
+<li></li>
+<li><a data-lbl="copyright" href="/legal/copyright.html">&copy; 2023 Oracle</a></li>
+<li><a data-lbl="privacy" href="/legal/privacy/">Privacy</a><span>/</span><a
+data-lbl="do-not-sell-my-info" href="/legal/privacy/privacy-choices.html">Do Not Sell My
+Info</a></li>
+<li>
+<div id="teconsent"></div>
+</li>
+<li><a data-lbl="ad-choices" href="/legal/privacy/advertising-privacy-policy.html#adchoices">Ad
+Choices</a></li>
+<li><a data-lbl="careers" href="/corporate/careers/">Careers</a></li>
+</ul>
+</nav>
+<nav class="u10scl" aria-label="Social media links">
+<ul class="scl-icons">
+<li class="scl-facebook"><a data-lbl="scl-icon:facebook" href="https://www.facebook.com/Oracle/"
+target="_blank" title="Oracle on Facebook"></a></li>
+<li class="scl-twitter"><a data-lbl="scl-icon:twitter" href="https://twitter.com/oracle" target="_blank"
+title="Follow Oracle on Twitter"></a></li>
+<li class="scl-linkedin"><a data-lbl="scl-icon:linkedin" href="https://www.linkedin.com/company/oracle/"
+target="_blank" title="Oracle on LinkedIn"></a></li>
+<li class="scl-youtube"><a data-lbl="scl-icon:you-tube" href="https://www.youtube.com/oracle/"
+target="_blank" title="Watch Oracle on YouTube"></a></li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+</div>
+<!-- /U10v0 -->
+<!-- END: oWidget_C/_Raw-Text/Display -->
+<!-- /U10v0 -->
+</div>
+<!-- Container/Display Start -->
+<!-- _Raw-Text -->
+<!-- www-us EndBodyAdminContainer -->
+<!-- Start SiteCatalyst code -->
+<script language="JavaScript" src="https://www.oracle.com/us/assets/metrics/ora_ocom.js"></script>
+<!-- End SiteCatalyst code -->
+<!-- www-us EndBodyAdminContainer -->
+<!-- / _Raw-Text -->
+<!-- Container/Display end -->
+</body>
+</html>
+
