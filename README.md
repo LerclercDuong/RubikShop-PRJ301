@@ -54,4 +54,7 @@ Overall score: 8.5
 - Transaction history
 ![image](https://github.com/LerclercDuong/RubikShop-PRJ301/assets/89032831/13133d1e-d9fb-4ad3-a552-a289fc68031e)
 
+- Payment handling: NodeJs server
+![image](https://github.com/LerclercDuong/RubikShop-PRJ301/assets/89032831/bc198b3c-1043-41d8-894f-9e6f1a745f07)
+
 
